@@ -35,13 +35,18 @@ The snowflake ID should be generated for the system when this package is install
 You can use this tool to generate an ID if for some reason one doesn't exist.
 
 Usage of snowflake:
+
   -f string
     	Use specified file to store id (default "/etc/snowflake")
+	
   -file string
     	Use specified file to store id (shorthand) (default "/etc/snowflake")
+	
   -force-new-key
     	Force generation of new ID. WARNING: Deletes existing ID
+	
   -m	Make a snowflake ID if one doesn't exist. If one already does, this does nothing, so it's always safe to use. (shorthand)
+  
   -make-snowflake
     	Make a snowflake ID if one doesn't exist. If one already does, this does nothing, so it's always safe to use. (shorthand)
  
