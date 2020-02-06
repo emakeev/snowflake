@@ -2,23 +2,23 @@
 
 Snowflake is a simple Go implementation of API for creation, management and usage of per-machine UUIDs (called a 'snowflake'). Usage is simple:
 
-    import (
-        "fmt"
-        "github.com/emakeev/snowflake"
-    )
+		import (
+			"fmt"
+			"github.com/emakeev/snowflake"
+		)
     
 		if err := snowflake.WriteNew(file); err != nil {
 			fmt.Printf("Could not create a new snowflake ID: %v\n", err)
 			return ...
 		}
-    ...
-    u, err := snowflake.Get()
-	  if err != nil {
-		  fmt.Printf("Couldn't find a snowflake ID in '%s': %v.\nTry running with the -m option to make one\n", file, err)
-		  return ...
-	  }
-	  fmt.Print(u.Encode(), "\n")  // would print something similar to: 7232c1c3-f6d1-4aec-bedd-c7e4c10dc8d3
-    ...
+    		...
+    		u, err := snowflake.Get()
+		if err != nil {
+			fmt.Printf("Couldn't find a snowflake ID in '%s': %v.\nTry running with the -m option to make one\n", file, err)
+			return ...
+		}
+		fmt.Print(u.Encode(), "\n")  // would print something similar to: 7232c1c3-f6d1-4aec-bedd-c7e4c10dc8d3
+		...
     
 There is also a CLI tool that can be run from the command line:
 $ snowflake
