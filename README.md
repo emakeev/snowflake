@@ -21,10 +21,12 @@ Snowflake is a simple Go implementation of API for creation, management and usag
 		...
     
 There is also a CLI tool that can be run from the command line:
+
 $ snowflake
 008b6f86-0f90-4d71-5814-b73eeb87c1ac
 
 Use -h flag to see all available options:
+
 $ snowflake -h
 
 Generate IDs for a system that are as unique as a snowflake (they're just persistent UUIDs).
